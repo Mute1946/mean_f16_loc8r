@@ -19,3 +19,4 @@ var ctrlAirport = require('../controllers/Airport')
 router.get('/api/:airport', ctrlAirport.airportidReadOne);
 
 module.exports = router;
+
