@@ -4,9 +4,8 @@ angular
 
 airportData.$inject = ['http'];   
 function airportData ($http) {
-    var locationByCoords = function (lat, long) {
-        return $http.get('/api/locations?lng=' + lng + '&lat=' + lat +
-          '&maxDistance=20');
+    var locationByCoords = function () {
+        return $http.get('/api/airport/');
     };
     return {
         locationByCoords : locationByCoords

@@ -16,6 +16,6 @@ var ctrlAirport = require('../controllers/Airport')
 //router.put('/locations/:locationid/reviews/:reviewid', ctrlReviews.reviewsUpdateOne);
 //router.delete('/locations/:locationid/reviews/:reviewid', ctrlReviews.reviewsDeleteOne);
 
-router.get('/api/:airport', ctrlAirport.airportidReadOne);
+router.get('/airport/:airport', ctrlAirport.airportidReadOne);
 
 module.exports = router;

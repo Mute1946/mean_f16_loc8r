@@ -15,11 +15,9 @@
     <div class="error">{{ vm.message }}</div>
     <div class="row list-group">
         <div class="col-xs-12 list-group-item" ng-repeat="location input
-        vm.data.locations | filter : textFilter">
+        vm.data.airport | filter : textFilter">
             <h4>
                 <a href="/api/{{ airport.id }}">{{ airport.name }}</a>
-                <small class="rating-stars" rating stars
-        rating="location.rating"></small>
                 <span class="badge pull-right badge-default">{{ location.distance |
                     formatDistance }}</span>
             </h4>
